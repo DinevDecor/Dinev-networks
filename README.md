@@ -160,7 +160,7 @@
 **Връзка (еднократно направена):**
 - Tuya IoT проект **„Zaryadno"** на iot.tuya.com, **Data Center = Central Europe** → API endpoint **`https://openapi.tuyaeu.com`**.
 - App account `regalux@abv.bg` е закачен към проекта (Link App Account). IP Allowlist = изкл.
-- **Access ID / Access Secret = ТАЙНИ, НЕ се пазят тук** — у собственика / в Tuya проекта. Подават се в чата при нужда.
+- **Access ID / Access Secret = ТАЙНИ, НЕ в GitHub.** Запазени **локално** на вилния компютър `DESKTOP-IFCHTQE` → `C:\Users\Public\tuya-cred.txt` (вкл. project code `p17923097818877tn9yn`, Home ID, device ID-та, automation ID-та). Оттам ги чета, без да ги търся всеки път. (Access ID = `duxct9ece9njwmsrw7hh` — само ID, не е тайна; секретът е само в локалния файл.)
 - Повикването работи **само от потребителска Windows машина** (напр. `DESKTOP-SC4DEIV` или `Dinev`) — облакът блокира `openapi.tuyaeu.com`. Подпис: HMAC‑SHA256. Образец: `C:\Users\Public\tuya.ps1` (съдържа ключа → да се трие след ползване).
 
 **DP кодове (категория `qccdz`):**
