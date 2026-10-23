@@ -29,6 +29,8 @@
 
 Достъп: Desktop Commander (устройствата се сменят, затова винаги `list_devices` първо).
 - `DESKTOP-IFCHTQE` беше свързан на 23.10.2026: инсталиран Node.js (за `npx`), после `npx @wonderwhy-er/desktop-commander@latest remote`. Трябваше `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` заради блокирани скриптове.
+  - **Авто-възстановяване след ток** (вилата спира ток, собственикът идва рядко): не заспива (standby/hibernate=0); Tailscale = услуга (сам се връзва); DC автостарт през Startup папката (`dc-remote.vbs` → `C:\Users\Public\dc-remote.cmd`). Две еднократни ръчни стъпки от собственика: авто-логин (хелпер `C:\Users\Public\ВКЛЮЧИ-автологин.cmd`, с UAC) и BIOS „power-on при връщане на тока". На APC Back-UPS ES 700.
+  - ⚠️ Първият тест на авто-рестарта да е **под наблюдение** — ако DC не се закачи сам, пуска се пак `npx …remote` веднъж и се оправя стартерът.
 
 ### Tailscale (mesh VPN, акаунт `dinevdecor@`)
 Всички машини са в една Tailscale мрежа → достъпни по Tailscale IP от всяко устройство, независимо от локалната мрежа. IP‑тата са в таблицата горе. Телефон `iphone183` = 100.90.137.79. Инсталация на нова машина: `winget install --id Tailscale.Tailscale -e` (с главни букви!), после се автентикира само ако акаунтът е логнат.
